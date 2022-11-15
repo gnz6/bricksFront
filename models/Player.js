@@ -8,7 +8,7 @@ const playerSchema = new mongoose.Schema({
         type: Number
     },
     team: {
-        type: Number,
+        type: String,
         default:"Free Agent"
     },
     user:{
