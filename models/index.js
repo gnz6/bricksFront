@@ -4,6 +4,7 @@ const models = {
     leagueModel: require("./League"),
     categoryModel: require("./Category"),
     teamModel: require("./Team"),
+    gameModel: require("./Game")
 }
 
 module.exports = models 
