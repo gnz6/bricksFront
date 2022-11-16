@@ -4,6 +4,7 @@ const cors = require("cors")
 const app = express()
 const port = process.env.PORT || 3001
 const bodyParser = require("body-parser")
+const cookieParser = require("cookie-parser")
 const dbConnect = require("./config/mongo")
 const { CORS_URL } = process.env
 const morgan = require("morgan")

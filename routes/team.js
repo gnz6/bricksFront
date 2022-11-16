@@ -1,10 +1,11 @@
 const express = require("express")
 const router = express.Router();
+const {getAll, getOne, update, deletedTeam, create} = require("../controllers/team")
 
-router.get("/", (req,res)=>{})
-router.get("/:team_id", (req,res)=>{})
-router.post("/", (req,res)=>{})
-router.put("/:team_id", (req,res)=>{})
-router.delete("/:team_id", (req,res)=>{})
+router.get("/", getAll)
+router.get("/:team_id", getOne)
+router.post("/", create)
+router.put("/:team_id", update)
+router.delete("/:team_id", deletedTeam)
 
 module.exports = router;

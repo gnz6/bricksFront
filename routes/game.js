@@ -1,10 +1,11 @@
 const express = require("express")
 const router = express.Router();
+const  {getAll, getOne, update, deletegame, create} = require("../controllers/game")
 
-router.get("/", (req,res)=>{})
-router.get("/:game_id", (req,res)=>{})
-router.post("/", (req,res)=>{})
-router.put("/:game_id", (req,res)=>{})
-router.delete("/:game_id", (req,res)=>{})
+router.get("/", getAll)
+router.get("/:game_id", getOne)
+router.post("/",create)
+router.put("/:game_id", update)
+router.delete("/:game_id", deletegame)
 
 module.exports = router;
